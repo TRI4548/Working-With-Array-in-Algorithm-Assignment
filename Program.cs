@@ -22,19 +22,19 @@ namespace Tuan2
             }
             else
             {
-                Console.WriteLine($"\nTim thay {n} o vi tri i = {a.FindContent(n)}");
+                Console.WriteLine($"\nTim thay {n} o vi tri i = {a.FindContent(n)} (Xuat phat i = 0)");
             }
             
-            if(a.CheckArray(len) == "TangDan"){
-                Console.WriteLine("Co the sap xep tuyen tinh vi mang tang dan");
+            if(a.CheckArray() == "Increase"){
+                Console.WriteLine("mang tang dan");
             }
-            else if(a.CheckArray(len) == "GiamDan")
+            else if(a.CheckArray() == "Decrease")
             {
-                Console.WriteLine("Co the sap xep tuan tu vi mang giam dan");
+                Console.WriteLine("mang giam dan");
             }
-            else
+            else if(a.CheckArray() == "Not_in_order")
             {
-                Console.WriteLine("Co the sap xep tuan tu vi mang khong co thu tu");
+                Console.WriteLine("mang khong co thu tu");
             }
             Console.WriteLine($"So lan thuc hien so sanh tuan tu la: {a.CountLinearSearchSteps(n)}");
             Array.Sort(a.Mang);
@@ -50,16 +50,22 @@ namespace Tuan2
             get => this.array;
             set { this.array = value; }
         }
-
         public MyIntArray(int n = 8)
         {
             Mang = new int[n];
         }
-
         public int this[int i]
         {
             get => array[i];
             set => array[i] = value;
+        }
+        public void Input()
+        {
+            String[] tk = Console.ReadLine().Split();
+            for(int i = 0; i< Mang.Length;i++)
+            {
+                Mang[i] = int.Parse(tk[i]);
+            }
         }
 
         public void RandomArray(int max)        //phát sinh ngẫu nhiên mảng
@@ -125,30 +131,32 @@ namespace Tuan2
             }
             return found;
         }
-        public string CheckArray(int chieudaimang)         //Kiểm tra xem mảng tăng dần, giảm dần hay không có thứ tự
+        public string CheckArray()         //Kiểm tra xem mảng tăng dần, giảm dần hay không có thứ tự
         {
-            MyIntArray b = new MyIntArray(chieudaimang);
-            MyIntArray c = new MyIntArray(chieudaimang);
-            for(int i = 0;i<chieudaimang;i++){
-                b.Mang[i] = this.Mang[i];
-                c.Mang[i] = this.Mang[i];
-            }
-            Array.Sort(b.Mang);
-            Array.Sort(c.Mang);
-            Array.Reverse(c.Mang);
-            if(this.Mang == b.Mang)
+            int count_increase = 0;
+            int count_decrease = 0;
+            for(int i = 0; i< Mang.Length - 1; i++)
             {
-                return "TangDan";
+                if(Mang[i+1]>=Mang[i])
+                {
+                    count_increase++;
+                }
+                if(Mang[i+1]<=Mang[i])
+                {
+                    count_decrease++;
+                }
             }
-            else if(this.Mang == c.Mang)
+            if(count_increase == Mang.Length - 1)
             {
-                return "GiamDan";
+                return "Increase";
             }
-            else
+            else if(count_decrease == Mang.Length - 1)
             {
-                return "KhongCoThuTu";
+                return "Decrease";
             }
+            return "Not_in_order";
         }
+        
     }
 }
 
