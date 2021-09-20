@@ -26,15 +26,15 @@ namespace Tuan2
             }
             
             if(a.CheckArray() == "Increase"){
-                Console.WriteLine("mang tang dan");
+                Console.WriteLine("Mang tang dan nen ta co the tim kiem tuan tu hay tuyen tinh deu duoc");
             }
             else if(a.CheckArray() == "Decrease")
             {
-                Console.WriteLine("mang giam dan");
+                Console.WriteLine("Mang giam dan nen ta chi co the tim kiem tuan tu");
             }
             else if(a.CheckArray() == "Not_in_order")
             {
-                Console.WriteLine("mang khong co thu tu");
+                Console.WriteLine("Mang khong co thu tu nen ta chi co the tim kiem tuan tu");
             }
             Console.WriteLine($"So lan thuc hien so sanh tuan tu la: {a.CountLinearSearchSteps(n)}");
             Array.Sort(a.Mang);
@@ -159,5 +159,3 @@ namespace Tuan2
         
     }
 }
-
-
