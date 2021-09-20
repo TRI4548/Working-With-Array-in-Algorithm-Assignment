@@ -1,0 +1,16 @@
+D:\HocTap\Năm2\HK1nam2\Cấu trúc dữ liệu và giải thuật\ThucHanh\LopLyThuyet\Tuan2\bin\Debug\net5.0\Tuan2.exe
+D:\HocTap\Năm2\HK1nam2\Cấu trúc dữ liệu và giải thuật\ThucHanh\LopLyThuyet\Tuan2\bin\Debug\net5.0\Tuan2.deps.json
+D:\HocTap\Năm2\HK1nam2\Cấu trúc dữ liệu và giải thuật\ThucHanh\LopLyThuyet\Tuan2\bin\Debug\net5.0\Tuan2.runtimeconfig.json
+D:\HocTap\Năm2\HK1nam2\Cấu trúc dữ liệu và giải thuật\ThucHanh\LopLyThuyet\Tuan2\bin\Debug\net5.0\Tuan2.runtimeconfig.dev.json
+D:\HocTap\Năm2\HK1nam2\Cấu trúc dữ liệu và giải thuật\ThucHanh\LopLyThuyet\Tuan2\bin\Debug\net5.0\Tuan2.dll
+D:\HocTap\Năm2\HK1nam2\Cấu trúc dữ liệu và giải thuật\ThucHanh\LopLyThuyet\Tuan2\bin\Debug\net5.0\ref\Tuan2.dll
+D:\HocTap\Năm2\HK1nam2\Cấu trúc dữ liệu và giải thuật\ThucHanh\LopLyThuyet\Tuan2\bin\Debug\net5.0\Tuan2.pdb
+D:\HocTap\Năm2\HK1nam2\Cấu trúc dữ liệu và giải thuật\ThucHanh\LopLyThuyet\Tuan2\obj\Debug\net5.0\Tuan2.csproj.AssemblyReference.cache
+D:\HocTap\Năm2\HK1nam2\Cấu trúc dữ liệu và giải thuật\ThucHanh\LopLyThuyet\Tuan2\obj\Debug\net5.0\Tuan2.GeneratedMSBuildEditorConfig.editorconfig
+D:\HocTap\Năm2\HK1nam2\Cấu trúc dữ liệu và giải thuật\ThucHanh\LopLyThuyet\Tuan2\obj\Debug\net5.0\Tuan2.AssemblyInfoInputs.cache
+D:\HocTap\Năm2\HK1nam2\Cấu trúc dữ liệu và giải thuật\ThucHanh\LopLyThuyet\Tuan2\obj\Debug\net5.0\Tuan2.AssemblyInfo.cs
+D:\HocTap\Năm2\HK1nam2\Cấu trúc dữ liệu và giải thuật\ThucHanh\LopLyThuyet\Tuan2\obj\Debug\net5.0\Tuan2.csproj.CoreCompileInputs.cache
+D:\HocTap\Năm2\HK1nam2\Cấu trúc dữ liệu và giải thuật\ThucHanh\LopLyThuyet\Tuan2\obj\Debug\net5.0\Tuan2.dll
+D:\HocTap\Năm2\HK1nam2\Cấu trúc dữ liệu và giải thuật\ThucHanh\LopLyThuyet\Tuan2\obj\Debug\net5.0\ref\Tuan2.dll
+D:\HocTap\Năm2\HK1nam2\Cấu trúc dữ liệu và giải thuật\ThucHanh\LopLyThuyet\Tuan2\obj\Debug\net5.0\Tuan2.pdb
+D:\HocTap\Năm2\HK1nam2\Cấu trúc dữ liệu và giải thuật\ThucHanh\LopLyThuyet\Tuan2\obj\Debug\net5.0\Tuan2.genruntimeconfig.cache
