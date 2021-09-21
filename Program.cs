@@ -26,7 +26,7 @@ namespace Tuan2
             }
             
             if(a.CheckArray() == "Increase"){
-                Console.WriteLine("Mang tang dan nen ta co the tim kiem tuan tu hay tuyen tinh deu duoc");
+                Console.WriteLine("Mang tang dan nen ta co the tim kiem tuan tu hay nhi phan deu duoc");
             }
             else if(a.CheckArray() == "Decrease")
             {
@@ -156,6 +156,92 @@ namespace Tuan2
             }
             return "Not_in_order";
         }
-        
+        public void Swap(ref int Mang,ref int b)            //Phương thức đổi chỗ 2 số
+        {
+            int temp = Mang;
+            Mang = b;
+            b = temp;
+        }
+        public void BubbleSort()        //Sắp xếp nổi bọt
+        {
+            for (int i = 0; i < Mang.Length - 1; i++)
+            {
+                bool change = false;        //cải tiến
+                for (int j = Mang.Length - 1; j > i; j--)
+                {
+                    if (Mang[j - 1] > Mang[j])
+                    {
+                        Swap(ref Mang[j],ref Mang[j-1]);
+                        change = true;
+                    }
+                }
+                if (change == false)        //cải tiến
+                {
+                    break;
+                }
+            }
+            Console.WriteLine("This array has been sorted by BubbleSort!");
+        }
+        public void InterchangeSort()
+        {
+            for (int i = 0; i < Mang.Length - 1; i++)
+            {
+                bool change = false;
+                for (int j = i + 1; j < Mang.Length; j++)
+                {
+                    if (Mang[i] > Mang[j])
+                    {
+                        Swap(ref Mang[i],ref Mang[j]);
+                        change = true;
+                    }
+                }
+                if(change == false)
+                {
+                    break;
+                }
+            }
+            Console.WriteLine("This array has been sorted by InterchangeSort!");
+        }
+        public void SelectionSort()         //Sắp xếp kiểu tìm đứa nhỏ nhất nhét lên đầu
+        {
+            for(int i = 0; i<Mang.Length - 1;i++)
+            {
+                int min = i;
+                for(int j = i + 1;j<Mang.Length;j++)
+                {
+                    if(Mang[j] < Mang[min])
+                    {
+                        min = j;
+                    }
+                }
+                if(min!= i)
+                {
+                    Swap(ref Mang[min], ref Mang[i]);
+                }
+            }
+            Console.WriteLine("Array has been sorted by SelectionSort!");
+        }
+        public void InsertionSort()         //Sắp xếp kiểu chèn
+        {
+            for(int i = 1; i<Mang.Length;i++)
+            {
+                int x = Mang[i];
+                bool flag = false;
+                for(int j = i - 1;j>=0 && flag != true;)
+                {
+                    if(x<Mang[j])
+                    {
+                        Mang[j + 1] = Mang[j];
+                        j--;
+                        Mang[j + 1] = x;
+                    }
+                    else
+                    {
+                        flag = true;
+                    }
+                }
+            }
+            Console.WriteLine("Array has sorted by InsertionSort!");
+        }
     }
 }
