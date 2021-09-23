@@ -243,5 +243,25 @@ namespace Tuan2
             }
             Console.WriteLine("Array has sorted by InsertionSort!");
         }
+        public void QuickSort(int[] a, int left, int right)             //Sắp xếp nhanh
+        {
+            int pivot, i,j;
+            i = left;
+            j = right;
+            pivot = a[(left+right)/2];
+            while(i<j)
+            {
+                while(a[i] < pivot) i++;
+                while(a[j] > pivot) j--;
+                if(i<=j)
+                {
+                    Swap(ref a[i], ref a[j]);
+                    i++;
+                    j--;
+                }
+            }
+            if(left < j) QuickSort(a,left,j);
+            if(right > i) QuickSort(a,i,right);
+        }
     }
 }
